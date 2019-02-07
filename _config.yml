@@ -17,7 +17,7 @@ title: Bharath Adikar
 email: lkcbharath@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hello! I'm Bharath Adikar, a second year IT student at NITK Surathkal
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: lkcbharath
 instagram_username: lkcbharath

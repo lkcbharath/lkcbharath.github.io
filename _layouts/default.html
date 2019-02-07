@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="My website">
     <meta name="author" content="Bharath Adikar">
-    {% include style.html %}
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header-basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>{{ page.title }}</title>
   </head>
   <body>
@@ -16,6 +21,9 @@
     {{ content }}
 
     {% include footer.html %}
-
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src = "/assets/js/header.js"></script>
+    <script src = "/assets/js/footer.js"></script>
   </body>
 </html>
