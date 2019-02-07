@@ -10,7 +10,8 @@ body {
     
     display: block; 
     text-align: left; 
-    width: 650px; 
+    padding:
+    max-width: 650px; 
     margin: 0 auto; 
 }
 
