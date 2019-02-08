@@ -7,8 +7,14 @@ permalink: projects.html
 <div class="main">
     <p>
         Listed are my projects:
-
+    </p>
+    <p>
         (Pull from GitHub)
+
+        {% for project in site.projects %}
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.content }}</p>
+        {% endfor %}
 
     </p>
         
