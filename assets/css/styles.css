@@ -2,15 +2,23 @@ body {
     background-color: #eaf0f2;
     text-align: center; 
     padding: 50px; 
-    font: 1vw Helvetica, sans-serif; 
+    font: 16px Helvetica, sans-serif; 
     color: #333;
+}
+
+p {
+  font-size:120%;
+}
+
+h1 {
+  font-size:250%;
 }
 
 .main { 
     
     display: block; 
     text-align: left; 
-    max-width: 650px; 
+    max-width: 1000px; 
     margin: 0 auto; 
 }
 

@@ -40,7 +40,7 @@
 }
 
 .menu ul {
-	max-width: 600px;
+	max-width: 1000px;
 	margin: 60px auto 0;
 }
 
@@ -79,7 +79,7 @@
 	display: inline-block;
 }
 
-@media (max-height:800px){
+@media (max-height:650px){
 	.menu { padding-top:40px; }
 }
 
