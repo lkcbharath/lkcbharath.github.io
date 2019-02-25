@@ -5,9 +5,9 @@ date:   2019-1-12 00:07:45 +0530
 categories: technical
 ---
 
-Doesn't this sound easy? It is, except that you'll probably end up uninstalling `gpg` from Ubuntu (totally what not I did!). So here's a step by step guide just for you.
+Doesn't this sound easy? It is, except that you'll probably end up uninstalling `gpg` from Ubuntu (totally what not I did!). So, here's a guide just for you, and never worry about auto-signing commits again.
 
-Signing your commits made easy by me:
 1)
-2)
+
+2) Something related to Global variables export
 
