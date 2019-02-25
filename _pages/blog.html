@@ -4,9 +4,34 @@ title: Blog
 permalink: blog.html
 ---
 
-<div class = "main">
-    {% for post in site.posts %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.content }}</p>
-    {% endfor %}
-</div>
+
+    
+
+<section class="details-card">
+    <div class="container">
+        <div class="row">
+            {% for post in site.posts %}
+
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="https://placeimg.com/380/230/nature" alt="">
+                        </div>
+                        <div class="card-desc">
+                            <h3>{{ post.title | truncatewords: 3 }}</h3>
+                            <p>{{ post.excerpt | truncatewords: 30 }}</p>
+                                <a href="{{ post.url }}" class="btn-card">Read</a>   
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            
+        </div>
+
+        <br>
+    </div>
+    
+</section>
+
+

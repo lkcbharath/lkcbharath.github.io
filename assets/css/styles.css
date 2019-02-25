@@ -73,3 +73,29 @@ color: white;
   background:  #C71610;
   color: white;
 }
+/* some fix for the footer */
+
+.main-index { 
+    
+  display: relative; 
+  text-align: left; 
+  /* max-width: 1000px;  */
+  /* padding:30px; */
+  margin: 0 auto; 
+}
+
+.main-index::after{
+  content: '';
+  display: block;
+  /* height: 80px; */
+}
+
+/* Some fix for the centered captions */
+
+#carouselExampleIndicators .carousel-caption {
+top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+}
+
+
