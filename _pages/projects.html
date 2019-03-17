@@ -3,29 +3,52 @@ layout: default
 title: Projects
 permalink: projects.html
 ---
-
 <div class="main">
-    <p>
-        Listed are my projects:
-    </p>
-    <p>
-        (Pull from GitHub)
 
-        Android:
+    <div class = "card">
+        <div class = "container">
+            <br>
+            <h2>Android:</h2>
+            <p> Toastmasters</p>
+            <br>
+        </div>
+    </div>
 
-        Web:
+    <br>
 
-        Course Projects:
+    <div class = "card">
+        <div class = "container">
+            <br>
+            <h2>Web Development:</h2>
+            <p>NITK Coliseum<br>
+            Toastmasters Blog</p>
+            <br>
+        </div>
+    </div>
 
-        Misc.:
+    <br>
 
-        {% for project in site.projects %}
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.content }}</p>
-        {% endfor %}
+    <div class = "card">
+        <div class = "container">
+            <br>
+            <h2>Scripts:</h2>
+            <p>CoderStat
+            <br>
+            Imagineer-RFID
+            </p>
+        </div>
+    </div>
 
-    </p>
-        
+    <br>
+
+    <div class = "card">
+        <div class = "container">
+            <br>
+            <h2>Miscalleneous:</h2>
+            <p>SeeItNow</p>
+            <br>
+        </div>
+    </div>
 
 </div>
 
