@@ -1,6 +1,12 @@
+@import "header-basic.css";
+@import "blogcard.css";
+@import "footer.css";
+
+/* For the headers to look good, be sure to reset the margin and padding of the body */
 body { 
-    /* background-color: #eaf0f2; */
-    padding: 50px; 
+    background-color: #eaf0f2;
+    margin:0;
+	  padding:0;
     /* font: 16px Helvetica, sans-serif;  */
     color: #333;
 }
@@ -19,14 +25,14 @@ h1 {
     display: block; 
     text-align: left; 
     max-width: 1000px; 
-    padding:30px;
+    padding: 30px;
     margin: 0 auto; 
 }
 
 .main::after{
   content: '';
   display: block;
-  height: 80px; /* Set same as footer's height */
+  height: 60px; /* Set same as footer's height */
 }
 
 footer{
@@ -34,7 +40,7 @@ footer{
   position:fixed;
    bottom:0;
    width:100%;
-   height:80px;   /* Height of the footer */
+   height:60px;   /* Height of the footer */
 }
 
 /* some fix for the footer */
@@ -51,7 +57,7 @@ footer{
 .main-index::after{
   content: '';
   display: block;
-  /* height: 80px; */
+  /* height: 60px; */
 }
 
 /* Some fix for the centered captions */

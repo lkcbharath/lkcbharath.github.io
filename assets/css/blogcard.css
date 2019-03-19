@@ -5,10 +5,9 @@ section{
 }
 
 /* Background colour of page */
-.details-card {
-    /* background: #ecf0f1; */
-    background: #ffffff;
-}
+/* .details-card {
+    background: #ecf0f1;
+} */
 
 .card-content {
 	background: #ffffff;

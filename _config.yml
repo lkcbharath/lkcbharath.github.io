@@ -31,6 +31,10 @@ plugins:
 
 include: ['_pages','assets','_projects']
 
+# sass:
+#   sass_dir:          /assets/scss
+#   style:            :compressed
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
