@@ -32,6 +32,12 @@
 	text-decoration: none;
 }
 
+/* For rounded effect */
+.header-basic .header-limiter a:hover {
+	border-radius: 10px;
+	background-color: #4d5863;
+}
+
 .header-basic .header-limiter nav{
 	font:16px Arial, Helvetica, sans-serif;
 	line-height: 40px;
