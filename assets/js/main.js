@@ -16,18 +16,20 @@
 $(window).load(function() {
     $('.loader').delay(100).fadeOut('slow');
 
-    if (window.DeviceAcceleration) {
-        alert("Supports Device Acceleration");
-    } 
-    if (window.DeviceMotionEvent) {
-        alert("Supports Device Motion Event");
-    }
+    // if (window.DeviceAcceleration) {
+        // alert("Supports Device Acceleration");
+    // } 
+    // if (window.DeviceMotionEvent) {
+        // alert("Supports Device Motion Event");
+    // }
     if (window.DeviceOrientationEvent) {
-        alert("Supports Orientation Event");
-    }
-    if (window.DeviceRotationRate) {
-        alert("Supports Device Rotation Rate");
-    }
+        window.addEventListener('deviceorientation', function (event) {
+            this.alert(event.alpha + ',' + event.beta + ',' + event.gamma);
+        });
+    };
+    // if (window.DeviceRotationRate) {
+        // alert("Supports Device Rotation Rate");
+    // }
 });
 
 
