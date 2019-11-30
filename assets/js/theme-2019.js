@@ -152,7 +152,7 @@
         var original_x = this.x;
         var original_y = this.y;
         window.addEventListener('deviceorientation', function (event) {
-          if(!(p.cache.speedX > 0.01) && !(p.cache.speedY > 0.01)){
+          if(!(p.cache.speedX > 0) && !(p.cache.speedY > 0)){
             p.cache.x = original_x + (event.gamma*2);
             p.cache.y = original_y + (event.beta*5);
           }
@@ -170,6 +170,8 @@
         this.speedY = (my - this.y) / 20;
         this.x += this.speedX;
         this.y += this.speedY;
+        this.speedX = 0;
+        this.speedY = 0;
       };
       this.cut = function (img) {
         var mx, my;
