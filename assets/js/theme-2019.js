@@ -149,16 +149,23 @@
       this.speedY = 0;
       this.original_x = this.x;
       this.original_y = this.y;
+      this.oriented = false;
       if (window.DeviceOrientationEvent) {
-        alert("Try moving your phone/tablet around to watch the gems move!");
+        // alert("Try moving your phone/tablet around to watch the gems move!");
+        this.oriented = true;
         window.addEventListener('deviceorientation', function (event) {
-          if(!(p.cache.speedX > 0) && !(p.cache.speedY > 0)){
-            p.cache.x = p.cache.original_x + (event.gamma*2);
-            p.cache.y = p.cache.original_y + (event.beta*5);
+          if (!(p.cache.speedX > 0) && !(p.cache.speedY > 0)) {
+            p.cache.x = p.cache.original_x + (event.gamma * 2);
+            p.cache.y = p.cache.original_y + (event.beta * 5);
           }
         });
       };
       this.move = function () {
+        if (this.oriented == true) {
+          this.x = this.original_x;
+          this.y = this.original_y;
+          this.oriented = false;
+        }
         var mx, my;
         mx = p.mouseX;
         my = p.mouseY;
