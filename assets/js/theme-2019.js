@@ -152,7 +152,7 @@
       if (window.DeviceOrientationEvent) {
         alert("Try moving your phone/tablet around to watch the gems move!");
         window.addEventListener('deviceorientation', function (event) {
-          if(!(p.cache.speedX > 0.5) && !(p.cache.speedY > 0.5)){
+          if(!(p.cache.speedX > 0) && !(p.cache.speedY > 0)){
             p.cache.x = p.cache.original_x + (event.gamma*2);
             p.cache.y = p.cache.original_y + (event.beta*5);
           }
@@ -170,6 +170,8 @@
         this.speedY = (my - this.y) / 20;
         this.x += this.speedX;
         this.y += this.speedY;
+        this.speedX = 0;
+        this.speedY = 0;
       };
       this.cut = function (img) {
         var mx, my;
