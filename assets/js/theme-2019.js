@@ -147,6 +147,15 @@
       this.y = (p.img.height - p.triangleHeight) / 2;
       this.speedX = 0;
       this.speedY = 0;
+      if (window.DeviceOrientationEvent) {
+        alert("test");
+        var original_x = this.x;
+        var original_y = this.y;
+        window.addEventListener('deviceorientation', function (event) {
+          p.cache.x = original_x + (event.alpha * 10);
+          p.cache.y = original_y + (event.beta * 10);
+        });
+      };
       this.move = function () {
         var mx, my;
         mx = p.mouseX;

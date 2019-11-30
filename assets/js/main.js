@@ -22,11 +22,7 @@ $(window).load(function() {
     // if (window.DeviceMotionEvent) {
         // alert("Supports Device Motion Event");
     // }
-    if (window.DeviceOrientationEvent) {
-        window.addEventListener('deviceorientation', function (event) {
-            this.alert(event.alpha + ',' + event.beta + ',' + event.gamma);
-        });
-    };
+    
     // if (window.DeviceRotationRate) {
         // alert("Supports Device Rotation Rate");
     // }
