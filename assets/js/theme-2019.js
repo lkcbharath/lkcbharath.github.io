@@ -170,8 +170,6 @@
         this.speedY = (my - this.y) / 20;
         this.x += this.speedX;
         this.y += this.speedY;
-        this.speedX = 0;
-        this.speedY = 0;
       };
       this.cut = function (img) {
         var mx, my;
