@@ -147,14 +147,14 @@
       this.y = (p.img.height - p.triangleHeight) / 2;
       this.speedX = 0;
       this.speedY = 0;
+      this.original_x = this.x;
+      this.original_y = this.y;
       if (window.DeviceOrientationEvent) {
-        alert("test");
-        var original_x = this.x;
-        var original_y = this.y;
+        alert("Try moving your phone/tablet around to watch the gems move!");
         window.addEventListener('deviceorientation', function (event) {
           if(!(p.cache.speedX > 0.5) && !(p.cache.speedY > 0.5)){
-            p.cache.x = original_x + (event.gamma*2);
-            p.cache.y = original_y + (event.beta*5);
+            p.cache.x = p.cache.original_x + (event.gamma*2);
+            p.cache.y = p.cache.original_y + (event.beta*5);
           }
         });
       };
