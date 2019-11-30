@@ -152,8 +152,10 @@
         var original_x = this.x;
         var original_y = this.y;
         window.addEventListener('deviceorientation', function (event) {
-          p.cache.x = original_x + (event.gamma);
-          p.cache.y = original_y + (event.beta);
+          if(!(p.cache.speedX > 0) && !(p.cache.speedY > 0)){
+            p.cache.x = original_x + (event.gamma*2);
+            p.cache.y = original_y + (event.beta*5);
+          }
         });
       };
       this.move = function () {
