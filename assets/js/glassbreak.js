@@ -221,6 +221,7 @@ function shatterCompleteHandler() {
   vid.load();
   setTimeout(function () {
     $("#overlay-text").fadeIn();
+    $("#description-text").fadeIn();
   }, 8000);
   
 }
