@@ -215,7 +215,10 @@ function shatterCompleteHandler() {
   vid.autoplay = true;
   vid.loop = true;
   vid.load();
-
+  setTimeout(function () {
+    $("#overlay-text").fadeIn();
+  }, 8000);
+  
 }
 
 //////////////

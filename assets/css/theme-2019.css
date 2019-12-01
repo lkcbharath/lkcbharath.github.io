@@ -44,6 +44,18 @@
     height:auto;
 }
 
+.overlay {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  right: 30%;
+}
+
+.overlay p {
+  color:white;
+  font-size: 65%;
+}
+
 @media only screen and (max-width: 1199.98px) {
   #shtrtext p {
     font-size: 100%;
@@ -51,6 +63,12 @@
   #shatterimg {
     width:60%;
   }  
+  .overlay {
+    top: 10%;
+  }
+  .overlay p {
+    font-size: 50%;
+  }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -60,6 +78,12 @@
   #shatterimg {
     width:70%;
   } 
+  .overlay {
+    top: 8%;
+  }
+  .overlay p {
+    font-size: 40%;
+  }
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -68,7 +92,13 @@
   }
   #shatterimg {
     width:80%;
+  }
+  .overlay {
+    top: 7%;
   } 
+  .overlay p {
+    font-size: 30%;
+  }
 }
 
 @media only screen and (max-width: 575.98px) {
@@ -78,6 +108,12 @@
   #shatterimg {
     width:100%;
   } 
+   .overlay {
+    top: 5%;
+  }
+  .overlay p {
+    font-size: 20%;
+  }
 }
 
 .home-btn {
