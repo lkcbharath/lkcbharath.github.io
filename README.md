@@ -1,1 +1,1 @@
-# lkcbharath.github.io
+# Official Website for TEDxNITKSurathkal

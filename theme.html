@@ -46,7 +46,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body style="background-color:black;overscroll-behavior: none;">
     <div class="loader">
         <div class="loader-outter"></div>
         <div class="loader-inner" style="background-image: url('assets/img/mini_theme2019.png');"></div>
@@ -59,21 +59,36 @@
 
     <div id="kaliedo" class="ctnr container"
         style="cursor:pointer;max-width:100%;padding: 0px!important;background-color:white;">
+        
         <div class="grid">
+                <p style="text-align: justify;margin: auto; font-size: 100%; padding-left: 15%; padding-right: 15%; color: white; line-height: 1.2;">
+                    <span id="text_1" style="display: none;">Move your phone, tablet or cursor around to watch the gems move!</span>
+
+                    <span id="text_2" style="display: none;"><br>Click anywhere to see what happens...</span>
+                </p>
         </div>
     </div>
-    </section>
     <section id="shattersection" style="z-index: 100!important;display:none;">
         <div id="container" class="shatterclass" style="z-index: 100!important;"></div>
     </section>
-    <section id="shattermesg" style="color:white;background-color:black;display: none;width:100vw;height:100vh">
-        <div id="shtrtext" class="style fade-in" style="opacity: hidden">
-            <p>Exploring New Boundaries<br></p>
-            <p style="padding-top: 0.5em">TEDxNITKSurathkal 2019</p>
+    <section id="shattermesg" style="color:white;display: none;height:100vh">
+        <div id="shtrtext" class="style fade-in" style="width: 100%; margin: 0; padding: 0;">
+            <video poster="/assets/img/theme/theme_reveal.jpg" id="theme-reveal-video" style="width:100%;height: auto;margin:0;padding:0;">
+                <!-- <source src="/assets/img/theme/reveal_landscape.mov" media="all and (orientation: landscape)" style="z-index:101!important;"> -->
+                <source src="/assets/img/theme/reveal_landscape.m4v" media="all and (orientation: landscape)" type="video/mp4">
+                <!-- <source src="/assets/img/theme/reveal_portrait.mov" media="all and (orientation: portrait)"> -->
+                <!-- <source src="/assets/img/theme/reveal_portrait.m4v" media="all and (orientation: portrait)" type="video/mp4"> -->
+            </video>
+            <p style="padding-top: 0.5em;line-height: 1.2;padding-top:20px; padding-bottom: 50px;">
+                Our world is progressing towards an exciting future, surpassing challenges that were once thought to be impossible to
+            overcome. This drives us to the promise of coming up with new ideas and better solutions to the problems we continue to
+            face even today. To SCINTILLATE is to emit flashes of light; sparkles. Sometimes a spark is all it takes to set minds on
+            the path towards revolutionary ideas. Come witness the fireworks, as TEDxNITKSurathkal scintillates on..</p>
+            <a href="/" class="home-btn">Home Page</a>
         </div>
     </section>
 
-
+    
     <!--footer end -->
 
     <!-- ========== SCRIPTS ========== -->

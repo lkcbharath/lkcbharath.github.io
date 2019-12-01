@@ -15,17 +15,6 @@
 'use strict';
 $(window).load(function() {
     $('.loader').delay(100).fadeOut('slow');
-
-    // if (window.DeviceAcceleration) {
-        // alert("Supports Device Acceleration");
-    // } 
-    // if (window.DeviceMotionEvent) {
-        // alert("Supports Device Motion Event");
-    // }
-    
-    // if (window.DeviceRotationRate) {
-        // alert("Supports Device Rotation Rate");
-    // }
 });
 
 

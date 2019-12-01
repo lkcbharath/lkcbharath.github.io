@@ -18,7 +18,6 @@
     p.doChangeImg = false;
     p.offsetChangeImg = 0;
     p.changeImgG = '';
-    p.gyroscope = '';
     p.preload = function () {
       p.img = p.loadImage('assets/img/dev4.jpg');
     };
@@ -43,7 +42,6 @@
       p.cnv.parent('kaliedo');
       localStorage.setItem('start_transition', false);
       
-
       // p.gyroscope = new Gyroscope({ frequency: 1 });
 
       // p.gyroscope.addEventListener('reading', e => {
@@ -149,10 +147,7 @@
       this.speedY = 0;
       this.original_x = this.x;
       this.original_y = this.y;
-      this.oriented = false;
       if (window.DeviceOrientationEvent) {
-        // alert("Try moving your phone/tablet around to watch the gems move!");
-        this.oriented = true;
         window.addEventListener('deviceorientation', function (event) {
           if (!(p.cache.speedX > 0) && !(p.cache.speedY > 0)) {
             p.cache.x = p.cache.original_x + (event.gamma * 2);
@@ -161,11 +156,6 @@
         });
       };
       this.move = function () {
-        if (this.oriented == true) {
-          this.x = this.original_x;
-          this.y = this.original_y;
-          this.oriented = false;
-        }
         var mx, my;
         mx = p.mouseX;
         my = p.mouseY;
