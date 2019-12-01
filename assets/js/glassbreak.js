@@ -90,6 +90,10 @@ window.onload = function () {
   imageWidth = v_width;
   imageHeight = v_height;
 
+  if (v_height > v_width) {
+    $("#shtr_video_source").attr('src',"assets/img/theme/reveal_portrait.m4v");
+  }
+
   images[0] = image = new Image();
 
   if (kaliedo) {
