@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My website">
+    <meta name="author" content="Bharath Adikar">
+
+    {% include head_tag.html %}
+
+    <title>Blog Post: {{ page.title }}</title>
+  </head>
+  <body>
+
+    {% include header.html %}
+
+    <div class="main">
+      <h2> {{ page.title }}</h2><br>
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    {% include body_tag.html %}
+
+  </body>
+</html>

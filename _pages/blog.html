@@ -1,0 +1,48 @@
+---
+layout: default
+title: Blog
+permalink: blog.html
+---
+
+<!-- Do not modify this document! -->
+
+{% assign numPages = 0 %}
+<section class="details-card" style= "padding-top: 20px">
+    <div class="container">
+        <div class="row">
+            {% for post in site.posts %}
+            {% assign numPages = numPages | plus: 1 %}
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <!-- replace with standardized image -->
+                            <img src="https://placeimg.com/380/230/nature" alt="">
+                        </div>
+                        <div class="card-desc">
+                            <h3>{{ post.title | truncatewords: 3 }}</h3>
+                            <p>{{ post.excerpt | truncatewords: 25 }}</p>
+                                <button type="button" class="btn-card" data-toggle="modal" data-target="#myModal{{ numPages }}">Read</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal{{ numPages }}" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">{{ post.title }}</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>{{ post.content }}</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
